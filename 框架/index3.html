@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div.box {
+        width: 1000px;
+        height: 600px;
+        margin: 20px auto 0;
+    }
+
+    div.box aside {
+        height: 40px;
+       background-color: red;
+       margin-bottom: 10px;
+    }
+    div.box section{
+        height: 40px;
+        background-color: blue;
+        margin-bottom: 10px;
+    }
+    div.box span {
+        height: 40px;
+        background-color: black;
+        margin-bottom: 10px;
+        color:white;
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="box" id="box">
+        <aside class="child">1</aside>
+        <aside>2</aside>
+        <aside>3</aside>
+        <aside>4</aside>
+        <aside>5</aside>
+        <section>6</section>
+        <section>7</section>
+        <section>8</section>
+        <section>9</section>
+        <section style="padding: 20px;">0
+            <article style="background-color:aqua" class="child">100</article>
+        </section>
+        <span class="child">11</span>
+        <span class="child">12</span>
+        <span>13</span>
+        <span class="child"> 14</span>
+        <span>15</span>
+    </div>
+</body>
+<script src="agent.js"></script>
+<script>
+   agent2('box','click','child',function(){
+       this.style.backgroundColor = 'red';
+   });
+</script>
+
+</html>

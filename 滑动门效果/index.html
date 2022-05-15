@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        width: 270px;
+        height: 480px;
+    }
+    div.box{
+        margin: 50px auto 0;
+        width: 810px;
+        height: 480px;
+        display: flex;
+        overflow: hidden;
+        border:  1px solid #555;
+    }
+    section{
+        width: 90px;
+        box-shadow: -1px 1px 4px 2px rgba(0,0,0,0.3);
+        transition: all 0.7s
+    }
+    section:not(:last-child):hover{
+        width: 270px;
+    }
+</style>
+<body>
+    <div class="box">
+        <section><img src="../1.jpg" alt=""></section>
+        <section><img src="../2.jpg" alt=""></section>
+        <section><img src="../3.jpg" alt=""></section>
+        <section><img src="../5.jpg" alt=""></section>
+        <section><img src="../6.jpg" alt=""></section>
+        <section><img src="../7.jpg" alt=""></section>
+        <section><img src="../8.jpg" alt=""></section>
+    </div>
+</body>
+</html>
